@@ -1,0 +1,185 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+  }
+*/
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+/* 날씨 */
+.weather {
+    width: 60%;
+    height: 100px;
+    margin: 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.today_weather1 {
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* 캘린더 */
+.calendar {
+    width: 90%;
+    margin: 60px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.year-month {
+    font-size: 20px;
+    font-weight: 500;
+}
+  
+.nav2 {
+    display: flex;
+    /*
+    border: 1px solid #A3DDCB;
+    border-radius: 5px;
+    */
+}
+  
+.nav-btn {
+    width: 28px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    line-height: 34px;
+    background-color: transparent;
+    cursor: pointer;
+}
+  
+.go-today {
+    width: 75px;
+    /*
+    border-left: 1px solid #A3DDCB;
+    border-right: 1px solid #A3DDCB;
+    */
+}
+
+.add {
+    font-size: 40px;
+}
+
+.days {
+    display: flex;
+    margin: 25px 0 10px;
+}
+  
+.day {
+    width: calc(100% / 7);
+    text-align: center;
+}
+  
+.dates {
+    display: flex;
+    flex-flow: row wrap;
+    height: 700px;
+    border-top: 1px solid #A3DDCB;
+    border-right: 1px solid #A3DDCB;
+}
+  
+.date {
+    width: calc(100% / 7);
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #A3DDCB;
+    border-left: 1px solid #A3DDCB;
+}
+
+.other {
+    opacity: .3;
+}
+
+/* 토, 일 색 다르게 할 것인가 */
+/*
+.day:nth-child(7n + 1),
+.date:nth-child(7n + 1) {
+  color: #D13E3E;
+}
+
+.day:nth-child(7n),
+.date:nth-child(7n) {
+  color: #396EE2;
+}
+*/
+
+.today {
+    position: relative;
+    color: #A3DDCB;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.today::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #A3DDCB;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+}
+
+
+/* 날씨 */
+.calendar-weather-wrap {
+    width: 85%;
+    margin: 20px auto;
+    position: relative;
+}
+.calendar-weather-wrap img {
+    width: 100%;
+    height: 250px;
+    vertical-align: middle;
+}
+.calendar-weather-text1 {
+    /*padding: 10px 10px;
+    text-align: center;*/
+    font-size: 45px;
+    font-weight: bold;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.calendar-weather-text2 {
+    /*padding: 10px 10px;
+    text-align: center;*/
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+@media(max-width:440px) {
+    .calendar-weather-wrap {
+        width: 95%;
+    }
+}
