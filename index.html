@@ -46,23 +46,11 @@
     <body data-spy="scroll" data-target="#navbar-menu" data-offset="110">
 
 
-        <!-- Preloader -->
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="object" id="object_one"></div>
-                    <div class="object" id="object_two"></div>
-                    <div class="object" id="object_three"></div>
-                    <div class="object" id="object_four"></div>
-                </div>
-            </div>
-        </div><!--End off Preloader -->
-
-
         <div class="culmn">
             <!--Home page style-->
 
-
+            <!--오른쪽 검색 버튼 눌렀을 때 위에 올라오는 부분
+                나중에 DB와 연동해서 구현할 수 있으면 사용할 예정-->
             <nav class="navbar navbar-default bootsnav navbar-fixed no-background white">
                 <!-- Start Top Search -->
                 <div class="top-search">
@@ -85,6 +73,7 @@
                     </div> 
 
                     <!-- Start Header Navigation -->
+                    <!-- 맨 왼쪽 초록색 로고 -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
@@ -101,7 +90,7 @@
                     </div>
                     <!-- End Header Navigation -->
 
-                    <!-- navbar menu -->
+                    <!-- navbar menu 오른쪽 메뉴바 -->
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#home">Home</a></li>                    
@@ -115,6 +104,8 @@
                 </div> 
 
             </nav>
+
+            <!--위의 메뉴바 끝-->
 
             <!--Home Sections-->
             <section id="home" class="home bg-black fix">
@@ -136,8 +127,8 @@
                                             </div>
 
                                             <div class="home_btns m-top-40">
-                                                <a href="mypage.html" class="BtnSignin">Sign in</a> &emsp;
-                                                <a href="#" class="BtnSignup">Sign up</a>
+                                                <a href="index_without_login.html" class="BtnSignin">로그아웃 하기</a> &emsp;
+                                                <a href="signup_about_shopping.html" class="BtnSignup">마이페이지</a>
                                             </div>
                                         </div>
                                     </div><!-- End off slid item -->
@@ -150,7 +141,7 @@
             </section> <!--End off Home Sections-->
 
 
-            <!--Featured Section-->
+            <!--fAI 특징 4가지 (아이콘 + 글) -->
             <section id="features" class="features bg-grey">
                 <div class="container">
                     <div class="row">
@@ -236,8 +227,8 @@
                 </div>
             </section>
 
-
-            <!--Business Section-->
+<!-- 캘린더 부분 일단 임시 삭제
+           
             <section id="business" class="business roomy-70 ">
                 <div class="business_overlay"></div>
                 <div class="container">
@@ -275,7 +266,7 @@
                         </div>
                     </div>
                 </div>
-            </section><!-- End off Business section -->
+            </section>-->
 
 
             <!--product section-->
@@ -611,7 +602,7 @@
 
             <footer>
                 <!--<div class="action-lage"></div>-->
-                <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
+                <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30">
                     <div class="col-md-12">
                         <p class="wow fadeInRight" data-wow-duration="1s">
                             Made with 

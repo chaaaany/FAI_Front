@@ -52,17 +52,6 @@
     <body data-spy="scroll" data-target="#navbar-menu" data-offset="110">
 
 
-        <!-- Preloader -->
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="object" id="object_one"></div>
-                    <div class="object" id="object_two"></div>
-                    <div class="object" id="object_three"></div>
-                    <div class="object" id="object_four"></div>
-                </div>
-            </div>
-        </div><!--End off Preloader -->
 
 
         <div class="culmn">
@@ -95,10 +84,10 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-brand" href="#brand">
+                        <a class="navbar-brand" href="index.html">
                             <div class="mainLogoDiv">
-                                <img src="assets/images/greenFAIchar.png" class="ImgMainTopLogo" alt="">
-                                <img src="assets/images/greenLogo.png" class="ImgMainTopLogo" alt="">
+                                <img src="assets/images/redFAIchar.png" class="ImgMainTopLogo" alt="">
+                                <img src="assets/images/redLogo.png" class="ImgMainTopLogo" alt="">
                             </div>
                             
                             <!--<img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
@@ -110,8 +99,8 @@
                     <!-- navbar menu -->
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#home">Home</a></li>                    
-                            <li><a href="#features">Calendar</a></li>
+                            <li><a href="index.html">Home</a></li>                    
+                            <li><a href="calendar.html">Calendar</a></li>
                             <li><a href="#business">Eco</a></li>
                             <li><a href="#product">Shop</a></li>
                             <li><a href="#team">MyCloset</a></li>
@@ -121,63 +110,53 @@
                 </div> 
 
             </nav>
+<!--------로그인 페이지 시작 ------>
 
-        <!-------------------------- Add Code ----------------------------->
-        <!-- 'Calenndar' section -->
-            <section id="features" class="features bg-grey">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_features fix roomy-70">
-                            <div class="calendar-weather-wrap">
-                                <div class="calendar-weather-text1">
-                                    오늘은 눈이 와요.
-                                </div>
-                                <div class="calendar-weather-text2">
-                                    -10<br>
-                                    강수량: -10<br>
-                                </div>
-                                <div class="calendar-weather-image"><img src="assets/images/weather/weather-snow.jpg" alt=""></div>
-                            </div>
-                            <div class="calendar">
-                                <div class="header">
-                                    <div class="year-month"></div>
-                                    <div class="nav2">
-                                        <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
-                                        <button class="nav-btn go-today" onclick="goToday()">Today</button>
-                                        <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
-                                    </div>
-                                    <div class="nav3">
-                                        <button class="nav-btn add" onclick="add()">+</button>
-                                    </div>
-                                </div>
-                                <div class="main">
-                                    <div class="days">
-                                        <div class="day">일</div>
-                                        <div class="day">월</div>
-                                        <div class="day">화</div>
-                                        <div class="day">수</div>
-                                        <div class="day">목</div>
-                                        <div class="day">금</div>
-                                        <div class="day">토</div>
-                                    </div>
-                                    <div class="dates"></div>
-                                </div>
-                            </div>
-                            <script src="assets\js\calendar.js"></script>  
-                        </div>
-                        <!--코디 요약보기-->
-                        <div>
-                            <span><strong>22.05.15</strong></span> &nbsp; <span>결혼식</span>&nbsp;일정에 등록한 코디입니다.
-                            <img></div>
-                        </div>
-                    </div><!-- End off row -->
-                </div><!-- End off container -->
-            </section><!-- End off Featured Section-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/53a8c415f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets\css\login.css">
+
+
+    <div class="wrap">
+        <div class="login">
+            <h2>로그인</h2>
+            <div class="login_sns">
+
+            </div>
+            <div class="login_id">
+                <h4>이메일</h4>
+                <input type="email" name="" id="" placeholder="이메일">
+            </div>
+            <div class="login_pw">
+                <h4>비밀번호</h4>
+                <input type="password" name="" id="" placeholder="비밀번호">
+            </div>
+            <div class="login_etc">
+                <div class="forgot_pw">
+                    <a href="signup.html">회원가입</a>
+                </div>
+                <div class="forgot_pw">
+                    <a href="">비밀번호 찾기</a>
+                </div>
+            </div>
+            <div class="submit">
+                <input type="button" onclick=" location='index.html'" value="로그인">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+				
+			
+<!--------로그인 페이지 끝 ------>
+
 
             <footer>
                 <!--<div class="action-lage"></div>-->
-                <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30">
-                    <div class="col-md-12">
+                <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 ">
+                    <div class="col-md-12"></div>
                         <p class="wow fadeInRight" data-wow-duration="1s">
                             Made with 
                             <i class="fa fa-heart"></i>
