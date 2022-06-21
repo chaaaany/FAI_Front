@@ -892,7 +892,7 @@ Home Section style
 ==================*/
 
 .home{
-    background: url(../images/home-bg.jpg) no-repeat top center;
+    background: url(../images/home-bg2.png) no-repeat top center;
     background-size: cover;
     position: relative;
     padding-top: 300px;
@@ -1204,7 +1204,7 @@ work Section style
 /*Test Section
 ======================*/
 .test{
-    background: url(../images/test-bg.jpg) no-repeat top center;
+    background: url(../images/test-bg2.jpg) no-repeat top center;
     background-size: cover;
     position: relative;
 }
